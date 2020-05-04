@@ -12,6 +12,7 @@ using RovnoZyb.Entity;
 using Zyb.DTO.Models;
 using Zyb.DTO.Models.Results;
 using Zyb_Domain;
+using API_RovnoZyb.Helper.CustomValidator;
 
 namespace API_RovnoZyb.Controllers
 {
