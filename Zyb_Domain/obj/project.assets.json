@@ -1090,19 +1090,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\romap\\.nuget\\packages\\": {}
+    "C:\\Users\\ПК\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\romap\\source\\repos\\RovnoZyb\\Zyb_Domain\\Zyb_Domain.csproj",
+      "projectUniqueName": "C:\\Users\\ПК\\Source\\Repos\\RovnoZyb\\Zyb_Domain\\Zyb_Domain.csproj",
       "projectName": "Zyb_Domain",
-      "projectPath": "C:\\Users\\romap\\source\\repos\\RovnoZyb\\Zyb_Domain\\Zyb_Domain.csproj",
-      "packagesPath": "C:\\Users\\romap\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\romap\\source\\repos\\RovnoZyb\\Zyb_Domain\\obj\\",
+      "projectPath": "C:\\Users\\ПК\\Source\\Repos\\RovnoZyb\\Zyb_Domain\\Zyb_Domain.csproj",
+      "packagesPath": "C:\\Users\\ПК\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ПК\\Source\\Repos\\RovnoZyb\\Zyb_Domain\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\romap\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ПК\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1115,8 +1119,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\romap\\source\\repos\\RovnoZyb\\RovnoZyb\\RovnoZyb.csproj": {
-              "projectPath": "C:\\Users\\romap\\source\\repos\\RovnoZyb\\RovnoZyb\\RovnoZyb.csproj"
+            "C:\\Users\\ПК\\Source\\Repos\\RovnoZyb\\RovnoZyb\\RovnoZyb.csproj": {
+              "projectPath": "C:\\Users\\ПК\\Source\\Repos\\RovnoZyb\\RovnoZyb\\RovnoZyb.csproj"
             }
           }
         }
