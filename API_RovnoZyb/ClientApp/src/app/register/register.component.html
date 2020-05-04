@@ -1,0 +1,46 @@
+<div class="login-page">
+
+
+    <div class="form">
+
+
+        <h2>Реєстрація</h2>
+
+
+        <form class="login-form" #myForm="ngForm" (ngSubmit)="OnSubmit();">
+
+
+            <input type="text" placeholder="ПІБ" [(ngModel)]="model.FullName" name="FullName" />
+
+
+            <input type="text" placeholder="Електронна пошта" [(ngModel)]="model.Email" name="Email" />
+
+
+            <input type="password" placeholder="Пароль" [(ngModel)]="model.Password" name="Password" />
+
+
+            <input type="password" [(ngModel)]="confirmPassword" placeholder="Підтведження пароля"
+                name="confirmPassword" />
+
+
+            <input type="text" placeholder="Номер телефону" prefix='+38' mask='(000) 000-00-00'
+                [(ngModel)]="model.PhoneNumber" name="PhoneNumber" />
+
+            <input type="number" placeholder="Вік" [(ngModel)]="model.Age" name="Age" />
+
+            <input type="text" placeholder="Адрес" [(ngModel)]="model.Address" name="Address" />
+
+
+            <button type="submit">Зареєструватися</button>
+
+
+            <p class="message">Вже зареєстровані? <a [routerLink]="['/login']">Увійти</a></p>
+
+
+        </form>
+
+
+    </div>
+
+
+</div>

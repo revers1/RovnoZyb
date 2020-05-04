@@ -7,23 +7,23 @@ using System.Text;
 namespace RovnoZyb.Entity
 {
 
-    [Table("tblMoreInfo")]
-    public class UserMoreInfo
-    {
-        [Key]
-        public string id { get; set; }
+        [Table("tblMoreInfo")]
+        public class UserMoreInfo
+        {
+            [Key]
+            public string id { get; set; }
 
-        [Required]
-        public string FullName { get; set; }
+            [Required]
+            public string FullName { get; set; }
 
         [Required]
         public string Phone { get; set; }
 
         public string Address { get; set; }
-        [Required]
-        public int Age { get; set; }
+            [Required]
+            public int Age { get; set; }
 
-        public virtual User User { get; set; }
-    }
-
+            public virtual User User { get; set; }
+        }
+    
 }

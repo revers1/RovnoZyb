@@ -1,4 +1,6 @@
 
+using API_RovnoZyb.Helper;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -8,9 +10,12 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-
+using Microsoft.IdentityModel.Tokens;
 using RovnoZyb;
 using RovnoZyb.Entity;
+using System;
+using System.Text;
+using Zyb_Domain;
 
 namespace API_RovnoZyb
 {
@@ -34,6 +39,43 @@ namespace API_RovnoZyb
             services.AddIdentity<User, IdentityRole>()
                 .AddEntityFrameworkStores<EFContext>()
                 .AddDefaultTokenProviders();
+
+            services.AddTransient<JwtTokenService, JwtTokenService>();
+
+            var signingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration.GetValue<string>("SecretPhrase")));
+
+
+            services.Configure<IdentityOptions>(options =>
+            {
+                options.Password.RequireDigit = true;
+                options.Password.RequiredLength = 6;
+                options.Password.RequireLowercase = true;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireUppercase = false;
+            });
+
+
+
+            services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(cfg =>
+            {
+                cfg.RequireHttpsMetadata = false;
+                cfg.SaveToken = true;
+                cfg.TokenValidationParameters = new TokenValidationParameters()
+                {
+                    IssuerSigningKey = signingKey,
+                    ValidateAudience = false,
+                    ValidateIssuer = false,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                    // set ClockSkew is zero
+                    ClockSkew = TimeSpan.Zero
+                };
+            });
+
 
 
 
@@ -93,6 +135,9 @@ namespace API_RovnoZyb
                     spa.UseAngularCliServer(npmScript: "start");
                 }
             });
+            
+            SeederDataBase.SeedData(app.ApplicationServices,env,Configuration);
+
         }
     }
 }
