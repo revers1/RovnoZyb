@@ -66,10 +66,10 @@ export class LoginComponent implements OnInit {
               this.router.navigate(['/admin-panel']);
             }
 
-
-
-
             this.spinner.hide();
+
+
+
           }
           else {
             for (let i = 0; i < data.errors.length; i++) {

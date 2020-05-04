@@ -10,7 +10,7 @@ using RovnoZyb;
 namespace API_RovnoZyb.Migrations
 {
     [DbContext(typeof(EFContext))]
-    [Migration("20200424160520_first")]
+    [Migration("20200504174509_first")]
     partial class first
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
