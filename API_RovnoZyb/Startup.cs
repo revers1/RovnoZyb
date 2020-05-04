@@ -136,7 +136,7 @@ namespace API_RovnoZyb
                 }
             });
             
-            SeederDataBase.SeedData(app.ApplicationServices,env,Configuration);
+           // SeederDataBase.SeedData(app.ApplicationServices,env,Configuration);
 
         }
     }

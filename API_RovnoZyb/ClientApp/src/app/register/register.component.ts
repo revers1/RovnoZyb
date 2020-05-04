@@ -66,9 +66,9 @@ this.spinner.show();
           console.log(data);
 
           if (data.status === 200) {
-            this.spinner.hide();
             this.notifier.notify('success', 'You registered!');
             this.router.navigate(['/login']);
+            this.spinner.hide();
           } else {
              console.log(data);
             for (let i = 0; i < data.errors.length; i++) {
