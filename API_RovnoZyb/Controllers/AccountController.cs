@@ -129,7 +129,8 @@ namespace API_RovnoZyb.Controllers
                     return new ResultDTO
                     {
                         Status = 400,
-                        Message = "User not found"
+                        Message = "User not found",
+                        errors = error
                     };
                 }
                 else

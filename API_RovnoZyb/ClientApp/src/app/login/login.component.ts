@@ -72,9 +72,10 @@ export class LoginComponent implements OnInit {
 
           }
           else {
-            for (let i = 0; i < data.errors.length; i++) {
-              this.notifier.notify('error', data.errors[i]);
-            }
+            // for (let i = 0; i < data.errors.length; i++) {
+            //   this.notifier.notify('error', data.errors[i]);
+            // }
+            console.log(data);
             this.spinner.hide();
           }
 

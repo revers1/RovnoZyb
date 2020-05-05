@@ -22,3 +22,15 @@ C:\Users\ПК\Source\Repos\RovnoZyb\Zyb_Domain\obj\Debug\netcoreapp3.1\Zyb_Domai
 C:\Users\ПК\Source\Repos\RovnoZyb\Zyb_Domain\obj\Debug\netcoreapp3.1\Zyb_Domain.csproj.CopyComplete
 C:\Users\ПК\Source\Repos\RovnoZyb\Zyb_Domain\obj\Debug\netcoreapp3.1\Zyb_Domain.dll
 C:\Users\ПК\Source\Repos\RovnoZyb\Zyb_Domain\obj\Debug\netcoreapp3.1\Zyb_Domain.pdb
+C:\Users\romap\Desktop\Курсова\RovnoZyb\Zyb_Domain\bin\Debug\netcoreapp3.1\Zyb_Domain.deps.json
+C:\Users\romap\Desktop\Курсова\RovnoZyb\Zyb_Domain\bin\Debug\netcoreapp3.1\Zyb_Domain.dll
+C:\Users\romap\Desktop\Курсова\RovnoZyb\Zyb_Domain\bin\Debug\netcoreapp3.1\Zyb_Domain.pdb
+C:\Users\romap\Desktop\Курсова\RovnoZyb\Zyb_Domain\bin\Debug\netcoreapp3.1\RovnoZyb.dll
+C:\Users\romap\Desktop\Курсова\RovnoZyb\Zyb_Domain\bin\Debug\netcoreapp3.1\RovnoZyb.pdb
+C:\Users\romap\Desktop\Курсова\RovnoZyb\Zyb_Domain\obj\Debug\netcoreapp3.1\Zyb_Domain.csprojAssemblyReference.cache
+C:\Users\romap\Desktop\Курсова\RovnoZyb\Zyb_Domain\obj\Debug\netcoreapp3.1\Zyb_Domain.csproj.CoreCompileInputs.cache
+C:\Users\romap\Desktop\Курсова\RovnoZyb\Zyb_Domain\obj\Debug\netcoreapp3.1\Zyb_Domain.AssemblyInfoInputs.cache
+C:\Users\romap\Desktop\Курсова\RovnoZyb\Zyb_Domain\obj\Debug\netcoreapp3.1\Zyb_Domain.AssemblyInfo.cs
+C:\Users\romap\Desktop\Курсова\RovnoZyb\Zyb_Domain\obj\Debug\netcoreapp3.1\Zyb_Domain.csproj.CopyComplete
+C:\Users\romap\Desktop\Курсова\RovnoZyb\Zyb_Domain\obj\Debug\netcoreapp3.1\Zyb_Domain.dll
+C:\Users\romap\Desktop\Курсова\RovnoZyb\Zyb_Domain\obj\Debug\netcoreapp3.1\Zyb_Domain.pdb
