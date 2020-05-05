@@ -64,14 +64,15 @@ namespace API_RovnoZyb.Controllers
                 {
                     Email = model.Email,
                     UserName = model.Email,
-                    PhoneNumber = model.PhoneNumber
+
                 };
                 var userMoreInfo = new UserMoreInfo()
                 {
                     id = user.Id,
                     FullName = model.FullName,
                     Address = model.Address,
-                    Age = model.Age
+                    Age = model.Age,
+                    Phone = model.PhoneNumber
                 };
 
                 var result = await _userManager.CreateAsync(user, model.Password);
@@ -103,6 +104,50 @@ namespace API_RovnoZyb.Controllers
             }
         }
 
+        [HttpPost("login")]
+        public async Task<ResultDTO> Login([FromBody] UserLoginDTO model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return new ResultDTO
+                {
+                    Status = 400,
+                    Message = "ErroR",
+                    errors = CustomValidator.GetErrorsByModel(ModelState)
+                };
+            }
+            else
+            {
 
+                var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, false, false);
+                if (!result.Succeeded)
+                {
+                    List<string> error = new List<string>();
+                    error.Add("User not fount, password or email incorrect");
+
+
+                    return new ResultDTO
+                    {
+                        Status = 400,
+                        Message = "User not found"
+                    };
+                }
+                else
+                {
+                    var user = await _userManager.FindByEmailAsync(model.Email);
+                    await _signInManager.SignInAsync(user, false);
+
+                    return new ResultDTO
+                    {
+                        Status = 200,
+                        Message = "Ok",
+                        Token = _iJwtTokenService.CreateToken(user)
+                    };
+                }
+
+            }
+
+
+        }
     }
 }
