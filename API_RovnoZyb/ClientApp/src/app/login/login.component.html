@@ -1,4 +1,4 @@
-<div class="login-page">
+<!-- <div class="login-page">
 
 
     <div class="form">
@@ -7,7 +7,7 @@
         <h2>Вхід</h2>
 
 
-        <form class="login-form" #myForm="ngForm" (ngSubmit)="OnSubmit();">
+        <form class="login-form" #myForm="ngForm" >
 
 
             <input type="text" placeholder="Електронна пошта" [(ngModel)]="model.Email" name="Email" />
@@ -28,4 +28,17 @@
     </div>
 
 
-</div>
+</div> -->
+
+<div class="login">
+    <div class="login-triangle"></div>
+    
+    <h2 class="login-header">Log in</h2>
+  
+    <form class="login-container" (ngSubmit)="OnSubmit();" style="text-align: center;">
+      <p><input type="email" [(ngModel)]="model.Email" name="Email"  placeholder="Email"></p>
+      <p><input type="password" [(ngModel)]="model.Password" name="Password" placeholder="Password"></p>
+      <p [routerLink]="['/register']" style="color: gray; cursor: pointer;">Don't have an account?</p>
+      <p><input type="submit" value="Sign in"></p>
+    </form>
+  </div>
