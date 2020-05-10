@@ -55,7 +55,7 @@ namespace API_RovnoZyb.Controllers
                 {
                     Status = 500,
                     Message = "ERROR",
-                    errors = CustomValidator.GetErrorsByModel(ModelState)
+                    Errors = CustomValidator.GetErrorsByModel(ModelState)
                 };
             }
             else
@@ -84,7 +84,7 @@ namespace API_RovnoZyb.Controllers
                     {
                         Status = 500,
                         Message = "Error",
-                        errors = CustomValidator.GetErrorsByIdentityResult(result)
+                        Errors = CustomValidator.GetErrorsByIdentityResult(result)
                     };
                 }
                 else if (result.Succeeded)
@@ -113,7 +113,7 @@ namespace API_RovnoZyb.Controllers
                 {
                     Status = 400,
                     Message = "ErroR",
-                    errors = CustomValidator.GetErrorsByModel(ModelState)
+                    Errors = CustomValidator.GetErrorsByModel(ModelState)
                 };
             }
             else
@@ -130,7 +130,7 @@ namespace API_RovnoZyb.Controllers
                     {
                         Status = 400,
                         Message = "User not found",
-                        errors = error
+                        Errors = error
                     };
                 }
                 else

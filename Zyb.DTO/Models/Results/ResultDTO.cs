@@ -10,6 +10,6 @@ namespace Zyb.DTO.Models.Results
         public string Message { get; set; }
 
         public string Token { get; set; }
-        public List<string> errors { get; set; }
+        public List<string> Errors { get; set; }
     }
 }
