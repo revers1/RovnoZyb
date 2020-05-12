@@ -9,6 +9,8 @@ namespace RovnoZyb.Entity
     public class User : IdentityUser//успадк от дэфолт юзера
     {
         public virtual UserMoreInfo UserMoreInfo { get; set; }
+     
+
 
     }
 

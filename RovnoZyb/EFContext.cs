@@ -15,6 +15,7 @@ namespace RovnoZyb
 
         }
         public DbSet<UserMoreInfo> userMoreInfos { get; set; }
+        //public DbSet<Anketa> anketa { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder builder)//Zamena Foreign key 
@@ -24,6 +25,13 @@ namespace RovnoZyb
                 .WithOne(t => t.User)
                 .HasForeignKey<UserMoreInfo>(ui => ui.id);
             base.OnModelCreating(builder);
+
+
+            //builder.Entity<UserMoreInfo>()
+            //.HasRequired<Anketa>(s => s.UserMore)
+            //.WithMany(g => g.Students)
+            //.HasForeignKey<int>(s => s.CurrentGradeId);
+
 
         }
     }
