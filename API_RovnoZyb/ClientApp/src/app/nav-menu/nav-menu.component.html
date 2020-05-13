@@ -1,9 +1,9 @@
 <header>
   <nav
-    class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"
+    class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 headerMenu"
   >
     <div class="container">
-      <a class="navbar-brand" [routerLink]="['/']">Project_P_34_API</a>
+      <a  class="aLogoMenu"><img class="logoMenu" src="https://png.pngtree.com/png-clipart/20190603/original/pngtree-teeth-model-png-image_4809.jpg"></a>
       <button
         class="navbar-toggler"
         type="button"
@@ -13,41 +13,75 @@
         [attr.aria-expanded]="isExpanded"
         (click)="toggle()"
       >
-        <span class="navbar-toggler-icon"></span>
+        <!-- <span class="navbar-toggler-icon"></span> -->
       </button>
       <div
-        class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse"
+        class="navbar-collapse collapse d-sm-inline-flex "
         [ngClass]="{ show: isExpanded }"
       >
-        <ul class="navbar-nav flex-grow">
+        <ul class="navbar-nav ">
 		
-		
-          <li *ngIf="isLoggedIn === false" class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['login']">Login</a>
+    
+          <li *ngIf="isLoggedIn === false" class="nav-item liText" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark headerLi" [routerLink]="['main']">Главная</a>
           </li>
 
 
-          <li *ngIf="isLoggedIn === false" class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['register']">Register</a>
+          <li *ngIf="isLoggedIn === false" class="nav-item liText" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark headerLi" [routerLink]="['servants']">Услуги</a>
+          </li>
+
+          <!-- <li *ngIf="isLoggedIn === false" class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark headerLi" [routerLink]="['ourworks']">Нашие работы</a>
+          </li> -->
+
+          <li *ngIf="isLoggedIn === false" class="nav-item liText" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark headerLi" [routerLink]="['specialist']">Специалисты</a>
+          </li>
+
+          <li *ngIf="isLoggedIn === false" class="nav-item liText" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark headerLi" [routerLink]="['pricelist']">Стоимость</a>
+          </li>
+
+          <li *ngIf="isLoggedIn === false" class="nav-item liText" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark headerLi" [routerLink]="['contacts']">Контакты</a>
+          </li>
+
+    
+  
+
+      
+
+       
+
+          <li *ngIf="isAdmin === true" class="nav-item logout liText">
+            <a class="nav-link text-dark headerLi" [routerLink]="['admin-panel/user-manager']">Админ Панель</a>
           </li>
 
 
-          <li *ngIf="isAdmin === true" class="nav-item logout">
-            <a class="nav-link text-dark" [routerLink]="['admin-panel/user-manager']">Admin panel</a>
+          <li *ngIf="isLoggedIn === true" class="nav-item liText" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark headerLi" [routerLink]="['profile']">Профиль</a>
           </li>
 
 
-          <li *ngIf="isLoggedIn === true" class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['profile']">Profile</a>
-          </li>
-
-
-          <li *ngIf="isLoggedIn === true" class="nav-item logout">
-            <a class="nav-link text-dark" (click)="Logout()">Logout</a>
+          <li *ngIf="isLoggedIn === true" class="nav-item logout liText">
+            <a class="nav-link text-dark headerLi" (click)="Logout()"><img src="https://img.icons8.com/material-rounded/24/000000/exit.png"/></a>
           </li>
 		  
 		  
         </ul>
+      <nav style="float: left; margin-left:20%" class="navbar-nav ">
+          <li *ngIf="isLoggedIn === false" class="nav-item liText " [routerLinkActive]="['link-active']">
+              <a class="nav-link text-dark headerLi " [routerLink]="['login']">Вход</a>
+            </li>
+  
+  
+            <li *ngIf="isLoggedIn === false" class="nav-item liText" [routerLinkActive]="['link-active']">
+              <a class="nav-link text-dark headerLi " [routerLink]="['register']">Регистрация</a>
+            </li>
+      </nav>
+      
+      
       </div>
     </div>
   </nav>

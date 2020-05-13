@@ -6,13 +6,12 @@ using System.Text;
 
 namespace RovnoZyb.Entity
 {
-     public class Anketa
-    {
+   
         [Table("tblAnketa")]
-        public class UserMoreInfo
+        public class Anketa
         {
             [Key]
-            public string id { get; set; }
+            public string AnketaId { get; set; }
 
             [Required]
             public string FullName { get; set; }
@@ -35,8 +34,13 @@ namespace RovnoZyb.Entity
             [Required]
             public bool isClose { get; set; }
 
-         
-            //public virtual UserMoreInfo UserMore { get; set; }
+
+
+            [Required]
+            public string id { get; set; }
+
+
+            public UserMoreInfo UserMore { get; set; }
         }
-    }
+    
 }

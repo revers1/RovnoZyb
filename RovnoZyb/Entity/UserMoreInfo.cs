@@ -25,7 +25,8 @@ namespace RovnoZyb.Entity
 
         public virtual User User { get; set; }
 
-        //public virtual ICollection<Anketa> Anketa { get; set; }
+
+        public virtual ICollection<Anketa> Anketas { get; set; }
     }
 
 }

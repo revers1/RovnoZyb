@@ -10,11 +10,15 @@ import { DashboardsComponent } from './Areas/admin-area/Components/dashboard/das
 import { UserManagerComponent } from './Areas/admin-area/Components/user-manager/user-manager.component';
 import { AdminGuard } from './guards/admin.guard';
 import { NotLoginGuard } from './guards/notLogin.guard';
+
+import { AnketasComponent } from './anketas/anketas/anketas.component';
+
 const routes: Routes = [
  {path:'' ,component: HomeComponent, pathMatch:'full'},
 
  {path:'login',component: LoginComponent, pathMatch:'full',canActivate:[NotLoginGuard]},
  {path:'register',component: RegisterComponent, pathMatch:'full',canActivate:[NotLoginGuard]},
+ {path:'anketas',component: AnketasComponent, pathMatch:'full',canActivate:[NotLoginGuard]},
 
  {path:'admin-panel',
  component: AdminAreaComponent,

@@ -10,18 +10,23 @@ namespace Zyb.DTO.Models
         [Required(ErrorMessage = "Enter FullName!")]
         public string FullName { get; set; }
 
+
         [Required(ErrorMessage = "Enter Title!")]
         public string Title { get; set; }
 
         public string Text { get; set; }
 
+
         [Required(ErrorMessage = "Enter Phone!")]
         public string Phone { get; set; }
+
 
         [Required(ErrorMessage = "Enter Servant!")]
         public string Servant { get; set; }
 
 
         public bool isClose { get; set; }
+    
+        public string id { get; set; }
     }
 }
