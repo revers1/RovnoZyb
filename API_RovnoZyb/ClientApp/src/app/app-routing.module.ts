@@ -23,6 +23,7 @@ const routes: Routes = [
  {path:'anketas',component: AnketasComponent, pathMatch:'full',canActivate:[AuthGuard]},
  {path:'pricelist',component: PricelistComponent, pathMatch:'full',canActivate:[NotLoginGuard]},
 
+
  {path:'admin-panel',
  component: AdminAreaComponent,
  canActivate: [AdminGuard],
