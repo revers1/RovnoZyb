@@ -1,0 +1,56 @@
+h1{
+    text-align: center;
+    margin-top: 3%;
+}
+
+body{
+    height: 100%;;
+}
+
+
+.footer {
+    margin-top: 20%;
+
+}
+
+
+.support{
+    float: left;
+    margin-left: 10%;
+}
+
+
+
+.tt-location-icon {
+
+    width: 45px;
+    height: 45px;
+    font-size: 27px;
+    line-height: 42px;
+    color: #2824ff;
+    text-align: center;
+    border: 1px solid #3122ff;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.map{
+    height: 60px;
+    width: 300px;
+    float: left;
+}
+
+.mail{
+    height: 60px;
+    width: 200px;   
+    float: left;
+}
+
+p{
+    margin-top: 7px;
+    margin-bottom: auto;
+    font-size: 19px; 
+    font-style: oblique; 
+    font-weight: bold;
+}
