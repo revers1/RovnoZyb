@@ -19,11 +19,9 @@ export class LoginComponent implements OnInit {
     private apiService: ApiService,
     private notifier: NotifierService,
     private spinner: NgxSpinnerService,
-    private router: Router) {
-
-
-
-  }
+    private router: Router) 
+    {
+    }
 
   ngOnInit() {
     this.isError = false;
@@ -56,7 +54,7 @@ export class LoginComponent implements OnInit {
           if (data.status === 200) {
             //vse ok
             this.notifier.notify('success', 'Ввійшли успішно');
-            
+
             this.apiService.loginStatus.emit(true);
 
             window.localStorage.setItem('token', data.token);
@@ -67,7 +65,7 @@ export class LoginComponent implements OnInit {
               this.router.navigate(['/']);
             }
             else if (this.apiService.isAdmin()) {
-              this.router.navigate(['/admin-panel']);
+              this.router.navigate(['/admin-panel/user-manager']);
             }
 
             this.spinner.hide();
