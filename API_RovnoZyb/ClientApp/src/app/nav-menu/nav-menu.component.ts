@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ApiService } from '../core/api.service';
-import { Router } from '@angular/router';
+import { Router, provideRoutes } from '@angular/router';
+import { NotifierService } from 'angular-notifier';
 
 @Component({
   selector: 'app-nav-menu',
@@ -16,7 +17,8 @@ export class NavMenuComponent {
 
   constructor(
     private apiService: ApiService,
-    private router: Router  )
+    private router: Router,
+    private notifier: NotifierService)
   {
     this.isLoggedIn = this.apiService.isLoggedIn();
     this.isAdmin = this.apiService.isAdmin();
@@ -39,7 +41,12 @@ export class NavMenuComponent {
     this.router.navigate(['/']);
   }
 
-
+  notifyAnketa () {
+    if(this.isLoggedIn === false)
+    {
+        this.notifier.notify('warning', 'Ввойдите в аккаунт!');
+    }
+  }
 
 
   collapse() {

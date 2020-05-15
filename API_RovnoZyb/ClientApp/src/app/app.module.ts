@@ -26,6 +26,7 @@ import en from '@angular/common/locales/en';
 registerLocaleData(en);
 
 import { NZ_I18N, en_US } from 'ng-zorro-antd/i18n';
+import { ContactsComponent } from './contacts/contacts/contacts.component';
 
 const notifierOptions: NotifierOptions = {
    position: {horizontal: { position: 'right' }, vertical: { position: 'top' }}
@@ -46,7 +47,8 @@ const notifierOptions: NotifierOptions = {
       UserManagerComponent,
       AnketasComponent,
       PricelistComponent,
-      PricelistComponent
+      PricelistComponent,
+      ContactsComponent
    ],
    imports: [
       BrowserModule.withServerTransition({appId: 'ng-cli-universal'}),

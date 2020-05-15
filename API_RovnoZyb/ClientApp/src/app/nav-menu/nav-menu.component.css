@@ -16,7 +16,6 @@ html {
 .box-shadow {
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
-
 .logout{
   cursor: pointer;
 }
@@ -30,7 +29,7 @@ html {
 .headerMenu{
   background-color: rgba(8, 81, 190, 0.616) !important;
   height: 80px !important;
-  
+
 }
 
 .headerLi{
@@ -53,4 +52,8 @@ color: rgb(0, 217, 255) !important;
 
 .forfloat{
   float: right !important;
+}
+.zapisat{
+  background-color: green;
+  border-radius: 10px;
 }
