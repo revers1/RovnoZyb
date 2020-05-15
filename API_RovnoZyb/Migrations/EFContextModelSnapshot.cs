@@ -150,6 +150,52 @@ namespace API_RovnoZyb.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
+            modelBuilder.Entity("RovnoZyb.Entity.Anketa", b =>
+                {
+                    b.Property<string>("AnketaId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("FullName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Servant")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Text")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Time")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserMoreid")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("id")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("isClose")
+                        .HasColumnType("bit");
+
+                    b.HasKey("AnketaId");
+
+                    b.HasIndex("UserMoreid");
+
+                    b.ToTable("tblAnketa");
+                });
+
             modelBuilder.Entity("RovnoZyb.Entity.User", b =>
                 {
                     b.Property<string>("Id")
@@ -288,6 +334,13 @@ namespace API_RovnoZyb.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("RovnoZyb.Entity.Anketa", b =>
+                {
+                    b.HasOne("RovnoZyb.Entity.UserMoreInfo", "UserMore")
+                        .WithMany("Anketas")
+                        .HasForeignKey("UserMoreid");
                 });
 
             modelBuilder.Entity("RovnoZyb.Entity.UserMoreInfo", b =>

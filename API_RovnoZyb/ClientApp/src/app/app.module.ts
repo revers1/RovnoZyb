@@ -18,6 +18,8 @@ import { AdminAreaComponent } from './Areas/admin-area/admin-area.component';
 import { UserAreaComponent } from './Areas/user-area/user-area.component';
 import { DashboardsComponent } from './Areas/admin-area/Components/dashboard/dashboards.component';
 import { UserManagerComponent } from './Areas/admin-area/Components/user-manager/user-manager.component';
+import { AnketasComponent } from './anketas/anketas/anketas.component';
+import { PricelistComponent } from './pricelist/pricelist.component';
 import { DemoNgZorroAntdModule } from './ng-zorro-antd.module';
 import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
@@ -41,7 +43,10 @@ const notifierOptions: NotifierOptions = {
       AdminAreaComponent,
       UserAreaComponent,
       DashboardsComponent,
-      UserManagerComponent
+      UserManagerComponent,
+      AnketasComponent,
+      PricelistComponent,
+      PricelistComponent
    ],
    imports: [
       BrowserModule.withServerTransition({appId: 'ng-cli-universal'}),

@@ -1,5 +1,6 @@
+
 import { Component, OnInit } from '@angular/core';
-import { LoginModel } from '../Models/login.model'
+import { LoginModel } from '../Models/login.model';
 import { ApiService } from '../core/api.service';
 import { NotifierService } from 'angular-notifier';
 import { NgxSpinnerService } from 'ngx-spinner';
@@ -54,6 +55,7 @@ export class LoginComponent implements OnInit {
 
           if (data.status === 200) {
             //vse ok
+            this.notifier.notify('success', 'Ввійшли успішно');
 
             window.localStorage.setItem('token', data.token);
 
