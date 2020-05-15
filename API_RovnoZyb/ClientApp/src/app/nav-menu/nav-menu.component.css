@@ -53,3 +53,7 @@ color: rgb(0, 217, 255) !important;
 .forfloat{
   float: right !important;
 }
+.zapisat{
+  background-color: green;
+  border-radius: 10px;
+}

@@ -20,10 +20,15 @@ export class NavMenuComponent {
   {
     this.isLoggedIn = this.apiService.isLoggedIn();
     this.isAdmin = this.apiService.isAdmin();
+    
     this.apiService.loginStatus.subscribe((status) => {
       this.isLoggedIn = status;
       this.isAdmin = this.apiService.isAdmin();
     });
+
+   
+
+
   }
 
 

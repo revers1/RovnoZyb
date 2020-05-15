@@ -56,6 +56,8 @@ export class LoginComponent implements OnInit {
           if (data.status === 200) {
             //vse ok
             this.notifier.notify('success', 'Ввійшли успішно');
+            
+            this.apiService.loginStatus.emit(true);
 
             window.localStorage.setItem('token', data.token);
 
@@ -74,9 +76,11 @@ export class LoginComponent implements OnInit {
 
           }
           else {
-            // for (let i = 0; i < data.errors.length; i++) {
-            //   this.notifier.notify('error', data.errors[i]);
-            // }
+            for (let i = 0; i < data.errors.length; i++) {
+              this.notifier.notify('error', data.errors[i]);
+            }
+            // this.notifier.notify('error', 'Please, Enter email');
+
             console.log(data);
             this.spinner.hide();
           }

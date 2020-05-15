@@ -20,10 +20,12 @@ export class ApiService {
   SignUp(model: RegisterModel): Observable<ApiResult>
   {
       return this.http.post<ApiResult>(this.baseUrl + '/register', model);
+      
   }
 
   SignIn(UserLoginDTO: SignInModel): Observable<ApiResult>{
       return this.http.post<ApiResult>(this.baseUrl + '/login', UserLoginDTO);
+
   }
 
   isAdmin() {
