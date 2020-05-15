@@ -50,17 +50,17 @@
 <div class="register">
 
     <div class="register-triangle"></div>
-    <h2 class="register-header">Create account</h2>
+    <h2 class="register-header">Регистрация</h2>
   
     <form class="register-container" (ngSubmit)="OnSubmit()" style="text-align: center;">
-      <p><input type="text"[(ngModel)]="model.FullName" name="FullName" placeholder="Full Name"></p>
+      <p><input type="text"[(ngModel)]="model.FullName" name="FullName" placeholder="Имя и фамилия"></p>
       <p><input type="email" [(ngModel)]="model.Email" name="Email" placeholder="Email"></p>
-      <p><input type="number" [(ngModel)]="model.Age" name="Age" placeholder="Age"></p>
-      <p><input type="text" [(ngModel)]="model.Address" name="Address" placeholder="Address"></p>
-      <p><input type="text" [(ngModel)]="model.PhoneNumber" name="Phone" placeholder="Phone"></p>
-      <p><input type="password" [(ngModel)]="model.Password" name="Password" placeholder="Password"></p>
-      <p><input type="password" [(ngModel)]="confirmPassword" name="confirmPassword" placeholder="Repeat password"></p>
-      <p [routerLink]="['/login'] "style="cursor: pointer; color: gray;">Already have an account?</p>
-      <p><input type="submit" value="Sign up"></p>
+      <p><input type="number" [(ngModel)]="model.Age" name="Age" placeholder="Возраст"></p>
+      <p><input type="text" [(ngModel)]="model.Address" name="Address" placeholder="Адресс"></p>
+      <p><input type="text" [(ngModel)]="model.PhoneNumber" name="Phone" placeholder="Телефон"></p>
+      <p><input type="password" [(ngModel)]="model.Password" name="Password" placeholder="Пароль"></p>
+      <p><input type="password" [(ngModel)]="confirmPassword" name="confirmPassword" placeholder="Подтверждение пароля"></p>
+      <p [routerLink]="['/login'] "style="cursor: pointer; color: gray;">Уже зарегистрированы?</p>
+      <p><input type="submit" value="Регистрация"></p>
     </form>
 </div>

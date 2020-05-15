@@ -26,10 +26,17 @@ html {
 .aLogoMenu{
   margin-right: 9%;
 }
+
+
+.zapisat{
+
+  font-family: 'Balsamiq Sans', cursive !important;
+
+}
 .headerMenu{
-  background-color: rgba(8, 81, 190, 0.616) !important;
+  background-color: rgba(8, 57, 190, 0.459) !important;
   height: 80px !important;
-  
+  border-radius: 25px;
 }
 
 .headerLi{

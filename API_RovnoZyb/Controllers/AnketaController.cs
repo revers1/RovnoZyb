@@ -123,11 +123,11 @@ namespace API_RovnoZyb.Controllers
             anketas.Text = model.Text;
             anketas.Phone = model.Phone;
             anketas.Servant = model.Servant;
-            anketas.isClose = model.isClose;
+            anketas.isClose = false;
             anketas.id = model.id;
             anketas.Time = DateTime.Now + "";
 
-
+            _context.anketa.Add(anketas);
 
             _context.SaveChanges();
 

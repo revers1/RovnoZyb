@@ -21,7 +21,7 @@ const routes: Routes = [
  {path:'login',component: LoginComponent, pathMatch:'full',canActivate:[NotLoginGuard]},
  {path:'register',component: RegisterComponent, pathMatch:'full',canActivate:[NotLoginGuard]},
  {path:'anketas',component: AnketasComponent, pathMatch:'full',canActivate:[AuthGuard]},
- {path:'pricelist',component: PricelistComponent, pathMatch:'full',canActivate:[NotLoginGuard]},
+ {path:'pricelist',component: PricelistComponent, pathMatch:'full'},
 
 
  {path:'admin-panel',

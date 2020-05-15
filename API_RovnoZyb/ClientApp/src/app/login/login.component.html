@@ -33,12 +33,12 @@
 <div class="login">
     <div class="login-triangle"></div>
     
-    <h2 class="login-header">Log in</h2>
+    <h2 class="login-header">Вход в личный кабинет</h2>
   
     <form class="login-container" (ngSubmit)="OnSubmit();" style="text-align: center;">
       <p><input type="email" [(ngModel)]="model.Email" name="Email"  placeholder="Email"></p>
-      <p><input type="password" [(ngModel)]="model.Password" name="Password" placeholder="Password"></p>
-      <p [routerLink]="['/register']" style="color: gray; cursor: pointer;">Don't have an account?</p>
-      <p><input type="submit" value="Sign in"></p>
+      <p><input type="password" [(ngModel)]="model.Password" name="Password" placeholder="Пароль"></p>
+      <p [routerLink]="['/register']" style="color: gray; cursor: pointer;">Не зарегистрированы?</p>
+      <p><input type="submit" value="Войти"></p>
     </form>
   </div>
