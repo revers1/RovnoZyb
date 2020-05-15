@@ -3,6 +3,12 @@
 /* Provide sufficient contrast against white background */
 @import "~angular-notifier/styles";
 
+body{
+  background: url('images/1366252.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
 a {
   color: #0366d6;
 }

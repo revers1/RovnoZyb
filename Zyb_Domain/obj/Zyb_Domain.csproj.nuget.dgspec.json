@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ПК\\source\\repos\\RovnoZyb2\\Zyb_Domain\\Zyb_Domain.csproj": {}
+    "C:\\Users\\ПК\\Source\\Repos\\RovnoZyb2\\Zyb_Domain\\Zyb_Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ПК\\source\\repos\\RovnoZyb2\\RovnoZyb\\RovnoZyb.csproj": {
+    "C:\\Users\\ПК\\Source\\Repos\\RovnoZyb2\\RovnoZyb\\RovnoZyb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ПК\\source\\repos\\RovnoZyb2\\RovnoZyb\\RovnoZyb.csproj",
+        "projectUniqueName": "C:\\Users\\ПК\\Source\\Repos\\RovnoZyb2\\RovnoZyb\\RovnoZyb.csproj",
         "projectName": "RovnoZyb",
-        "projectPath": "C:\\Users\\ПК\\source\\repos\\RovnoZyb2\\RovnoZyb\\RovnoZyb.csproj",
+        "projectPath": "C:\\Users\\ПК\\Source\\Repos\\RovnoZyb2\\RovnoZyb\\RovnoZyb.csproj",
         "packagesPath": "C:\\Users\\ПК\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ПК\\source\\repos\\RovnoZyb2\\RovnoZyb\\obj\\",
+        "outputPath": "C:\\Users\\ПК\\Source\\Repos\\RovnoZyb2\\RovnoZyb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -81,14 +81,14 @@
         }
       }
     },
-    "C:\\Users\\ПК\\source\\repos\\RovnoZyb2\\Zyb_Domain\\Zyb_Domain.csproj": {
+    "C:\\Users\\ПК\\Source\\Repos\\RovnoZyb2\\Zyb_Domain\\Zyb_Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ПК\\source\\repos\\RovnoZyb2\\Zyb_Domain\\Zyb_Domain.csproj",
+        "projectUniqueName": "C:\\Users\\ПК\\Source\\Repos\\RovnoZyb2\\Zyb_Domain\\Zyb_Domain.csproj",
         "projectName": "Zyb_Domain",
-        "projectPath": "C:\\Users\\ПК\\source\\repos\\RovnoZyb2\\Zyb_Domain\\Zyb_Domain.csproj",
+        "projectPath": "C:\\Users\\ПК\\Source\\Repos\\RovnoZyb2\\Zyb_Domain\\Zyb_Domain.csproj",
         "packagesPath": "C:\\Users\\ПК\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ПК\\source\\repos\\RovnoZyb2\\Zyb_Domain\\obj\\",
+        "outputPath": "C:\\Users\\ПК\\Source\\Repos\\RovnoZyb2\\Zyb_Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -107,8 +107,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\ПК\\source\\repos\\RovnoZyb2\\RovnoZyb\\RovnoZyb.csproj": {
-                "projectPath": "C:\\Users\\ПК\\source\\repos\\RovnoZyb2\\RovnoZyb\\RovnoZyb.csproj"
+              "C:\\Users\\ПК\\Source\\Repos\\RovnoZyb2\\RovnoZyb\\RovnoZyb.csproj": {
+                "projectPath": "C:\\Users\\ПК\\Source\\Repos\\RovnoZyb2\\RovnoZyb\\RovnoZyb.csproj"
               }
             }
           }

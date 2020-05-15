@@ -823,11 +823,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ПК\\source\\repos\\RovnoZyb2\\Zyb.DTO\\Zyb.DTO.csproj",
+      "projectUniqueName": "C:\\Users\\ПК\\Source\\Repos\\RovnoZyb2\\Zyb.DTO\\Zyb.DTO.csproj",
       "projectName": "Zyb.DTO",
-      "projectPath": "C:\\Users\\ПК\\source\\repos\\RovnoZyb2\\Zyb.DTO\\Zyb.DTO.csproj",
+      "projectPath": "C:\\Users\\ПК\\Source\\Repos\\RovnoZyb2\\Zyb.DTO\\Zyb.DTO.csproj",
       "packagesPath": "C:\\Users\\ПК\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ПК\\source\\repos\\RovnoZyb2\\Zyb.DTO\\obj\\",
+      "outputPath": "C:\\Users\\ПК\\Source\\Repos\\RovnoZyb2\\Zyb.DTO\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -846,8 +846,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\ПК\\source\\repos\\RovnoZyb2\\RovnoZyb\\RovnoZyb.csproj": {
-              "projectPath": "C:\\Users\\ПК\\source\\repos\\RovnoZyb2\\RovnoZyb\\RovnoZyb.csproj"
+            "C:\\Users\\ПК\\Source\\Repos\\RovnoZyb2\\RovnoZyb\\RovnoZyb.csproj": {
+              "projectPath": "C:\\Users\\ПК\\Source\\Repos\\RovnoZyb2\\RovnoZyb\\RovnoZyb.csproj"
             }
           }
         }
