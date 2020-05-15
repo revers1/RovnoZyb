@@ -12,13 +12,16 @@ import { AdminGuard } from './guards/admin.guard';
 import { NotLoginGuard } from './guards/notLogin.guard';
 
 import { AnketasComponent } from './anketas/anketas/anketas.component';
+import { AuthGuard } from './guards/auth.guard';
+import { PricelistComponent } from './pricelist/pricelist.component';
 
 const routes: Routes = [
  {path:'' ,component: HomeComponent, pathMatch:'full'},
 
  {path:'login',component: LoginComponent, pathMatch:'full',canActivate:[NotLoginGuard]},
  {path:'register',component: RegisterComponent, pathMatch:'full',canActivate:[NotLoginGuard]},
- {path:'anketas',component: AnketasComponent, pathMatch:'full',canActivate:[NotLoginGuard]},
+ {path:'anketas',component: AnketasComponent, pathMatch:'full',canActivate:[AuthGuard]},
+ {path:'pricelist',component: PricelistComponent, pathMatch:'full',canActivate:[NotLoginGuard]},
 
  {path:'admin-panel',
  component: AdminAreaComponent,

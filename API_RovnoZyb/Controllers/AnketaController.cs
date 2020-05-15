@@ -112,12 +112,12 @@ namespace API_RovnoZyb.Controllers
         }
 
 
-        [HttpPost("addAnketas/{id}")]
+        [HttpPost("addanketas")]
         public ResultDTO AddAnketas([FromBody]AnketaDTO model)
         {
             Anketa anketas = new Anketa();
 
-            anketas.id = model.id;
+            anketas.AnketaId = Guid.NewGuid().ToString();
             anketas.FullName = model.FullName;
             anketas.Title = model.Title;
             anketas.Text = model.Text;
