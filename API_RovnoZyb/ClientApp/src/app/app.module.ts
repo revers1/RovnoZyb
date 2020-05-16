@@ -29,6 +29,7 @@ registerLocaleData(en);
 import { NZ_I18N, en_US } from 'ng-zorro-antd/i18n';
 import { ContactsComponent } from './contacts/contacts/contacts.component';
 import { AnketasManagerComponent } from './Areas/admin-area/Components/anketas-manager/anketas-manager.component';
+import { OurspecialistComponent } from './ourspecialist/ourspecialist.component';
 
 const notifierOptions: NotifierOptions = {
    position: {horizontal: { position: 'right' }, vertical: { position: 'top' }}
@@ -52,24 +53,25 @@ const notifierOptions: NotifierOptions = {
       PricelistComponent,
       ContactsComponent,
       MyprofileComponent,
-      AnketasManagerComponent
+      AnketasManagerComponent,
+      OurspecialistComponent
    ],
    imports: [
-      BrowserModule.withServerTransition({appId: 'ng-cli-universal'}),
-      HttpClientModule,
-      FormsModule,
-      AppRoutingModule,
-      NotifierModule.withConfig(notifierOptions),
-      BrowserAnimationsModule,
-      NgxSpinnerModule,
-	   DemoNgZorroAntdModule 
-   ],
-     providers: [],
-     bootstrap: [
-        AppComponent
-     ]
-  })
-export class AppModule{}
+            BrowserModule.withServerTransition({appId: 'ng-cli-universal'}),
+            HttpClientModule,
+            FormsModule,
+            AppRoutingModule,
+            NotifierModule.withConfig(notifierOptions),
+            BrowserAnimationsModule,
+            NgxSpinnerModule,
+      	   DemoNgZorroAntdModule 
+         ],
+           providers: [],
+           bootstrap: [
+              AppComponent
+           ]
+        })
+      export class AppModule{}
 
 
 // @NgModule({

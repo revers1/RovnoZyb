@@ -1,5 +1,6 @@
+<a nz-button nzType="warn" class="buttonAnket" style="margin-left: 20px;" [routerLink]="['/admin-panel/user-manager']" routerLinkActive="router-link-active" >Пользователи</a>
+<hr>
 <h2>Anketa Manager</h2>
-
 <nz-table #rowSelectionTable nzShowSizeChanger [nzData]="Anketas">
   <thead>
     <tr>
@@ -28,7 +29,7 @@
           <a nz-button nzType="primary" style="color:rgb(151, 0, 0)" 
           nz-popconfirm 
           nzPopconfirmTitle="Please, confirm delete"
-          (nzOnConfirm)="deleteAnketas(data.id)" class="buttonMenu">Удалить</a>
+          (nzOnConfirm)="removeAnketas(data.id)" class="buttonMenu">Удалить</a>
 
           <a nz-button nzType="primary" style="color:rgb(143, 0, 0)" 
           nz-popconfirm 

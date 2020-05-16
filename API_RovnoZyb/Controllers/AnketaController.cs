@@ -82,11 +82,11 @@ namespace API_RovnoZyb.Controllers
 
 
         [HttpPost("RemoveAnketas/{id}")]
-        public ResultDTO RemoveUser([FromRoute]string id)
+        public ResultDTO RemoveAnketas([FromRoute]string id)
         {
             try
             {
-                var anketa = _context.anketa.FirstOrDefault(t => t.AnketaId == id);
+                var anketa = _context.anketa.FirstOrDefault(t => t.id == id);
                 
                 _context.anketa.Remove(anketa);
             
@@ -128,6 +128,26 @@ namespace API_RovnoZyb.Controllers
             anketas.id = model.id;
 
           
+
+            _context.SaveChanges();
+
+            return new ResultDTO
+            {
+                Status = 200,
+                Message = "OK"
+            };
+
+        }
+
+        [HttpPost("closeAnketas/{id}")]
+        public ResultDTO CloseAnketas([FromRoute]string id)
+        {
+            var anketas = _context.anketa.FirstOrDefault(t => t.id == id);
+
+      
+            anketas.isClose = true;
+           
+
 
             _context.SaveChanges();
 

@@ -24,7 +24,28 @@ export class AnketasManagerComponent implements OnInit {
     });
   }
 
-  deleteAnketa(id: string)
+  closeAnketas(id: string){
+    this.anketaService.closeAnketas(id).subscribe( (data: ApiResult) => {
+      if(data.status === 200)
+      {
+        this.notifier.notify('success', 'Анкета Закрыта');
+       
+
+      }
+      else{
+        for(var i = 0; i < data.errors; i++)
+        {
+          this.notifier.notify('error', data.errors[i]);
+        }
+      }
+    
+    }
+  )
+
+  }
+
+
+  removeAnketas(id: string)
   {
     
     this.anketaService.removeAnketas(id).subscribe(
