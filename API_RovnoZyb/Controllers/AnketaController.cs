@@ -52,6 +52,34 @@ namespace API_RovnoZyb.Controllers
             return data;
         }
 
+        [HttpGet("getanketa/{id}")]
+        public IEnumerable<AnketaDTO> GetAnketaDTOs([FromRoute]string id)
+        {
+            List<AnketaDTO> data = new List<AnketaDTO>();
+            AnketaDTO temp = new AnketaDTO();
+
+            var dataFromDB = _context.anketa.ToList(); 
+
+            foreach (var item in dataFromDB)
+            {
+
+                if (item.AnketaId == id)
+                {
+                    temp.FullName = item.FullName;
+                    temp.Title = item.Title;
+                    temp.Text = item.Text;
+                    temp.Phone = item.Phone;
+                    temp.Servant = item.Servant;
+                    temp.isClose = item.isClose;
+                    temp.id = item.id;
+                }
+                
+                data.Add(temp);
+
+            }
+            return data;
+        }
+
 
         [HttpPost("RemoveAnketas/{id}")]
         public ResultDTO RemoveUser([FromRoute]string id)

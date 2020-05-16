@@ -1,0 +1,21 @@
+.input-search{
+    margin-bottom: 20px;
+}
+td{
+    padding: 15px;
+    
+}
+/* ul{
+    list-style: none;
+}
+ul li{
+    float: left;
+} */
+.buttonMenu{
+padding: 15px;
+cursor: pointer;
+}
+.buttonMenu:hover{
+    color: rgb(1, 68, 168);
+    transition: 1s;
+}

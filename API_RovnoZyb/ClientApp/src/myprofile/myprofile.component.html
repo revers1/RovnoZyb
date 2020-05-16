@@ -1,0 +1,18 @@
+<div class="register">
+<div *ngIf="model">
+    <div class="register-triangle"></div>
+    <h2 class="register-header">Мой кабинет</h2>
+  
+    <form class="register-container" (ngSubmit)="OnSubmit()" style="text-align: center;">
+      <p><input type="text"[(ngModel)]="model.FullName" name="FullName"></p>
+      <p><input type="email" [(ngModel)]="model.Email" name="Email" ></p>
+      <p><input type="number" [(ngModel)]="model.Age" name="Age" ></p>
+      <p><input type="text" [(ngModel)]="model.Address" name="Address" ></p>
+      <p><input type="text" [(ngModel)]="model.PhoneNumber" name="Phone" ></p>
+      <p><input type="password" [(ngModel)]="model.Password" name="Password" ></p>
+      <p><input type="password" [(ngModel)]="confirmPassword" name="confirmPassword"></p>
+    
+      <p><input type="submit" value="Изменить"></p>
+    </form>
+  </div>
+</div>

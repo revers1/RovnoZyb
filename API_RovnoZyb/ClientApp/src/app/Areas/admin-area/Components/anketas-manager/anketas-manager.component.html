@@ -1,0 +1,41 @@
+<h2>Anketa Manager</h2>
+
+<nz-table #rowSelectionTable nzShowSizeChanger [nzData]="Anketas">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>FullName</th>
+      <th>Title</th>
+      <th>Text</th>
+      <th>Phone</th>
+      <th>Servant</th>
+      <th>isClose</th>
+      
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of rowSelectionTable.data">
+      <td>{{ data.id }}</td>
+      <td>{{ data.fullName }}</td>
+      <td>{{ data.title }}</td>
+      <td>{{ data.text }}</td>
+      <td>{{ data.phone }}</td>
+      <td>{{ data.servant }}</td>
+      <td>{{ data.isClose }}</td>
+
+      <td>
+          <a nz-button nzType="primary" style="color:rgb(151, 0, 0)" 
+          nz-popconfirm 
+          nzPopconfirmTitle="Please, confirm delete"
+          (nzOnConfirm)="deleteAnketas(data.id)" class="buttonMenu">Удалить</a>
+
+          <a nz-button nzType="primary" style="color:rgb(143, 0, 0)" 
+          nz-popconfirm 
+          nzPopconfirmTitle="Please, confirm Close"
+          (nzOnConfirm)="closeAnketas(data.id)" class="buttonMenu">Закрыть</a>
+          
+      </td>
+    </tr>
+  </tbody>
+</nz-table>

@@ -43,6 +43,7 @@ html {
 }
 .headerLi:hover{
 color: rgb(0, 217, 255) !important;
+transition: all 1.3s;
 
 }
 
@@ -57,3 +58,10 @@ color: rgb(0, 217, 255) !important;
   background-color: green;
   border-radius: 10px;
 }
+
+
+
+
+
+
+

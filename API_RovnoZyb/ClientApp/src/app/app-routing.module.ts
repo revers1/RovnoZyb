@@ -15,6 +15,8 @@ import { ContactsComponent } from './contacts/contacts/contacts.component';
 import { AnketasComponent } from './anketas/anketas/anketas.component';
 import { AuthGuard } from './guards/auth.guard';
 import { PricelistComponent } from './pricelist/pricelist.component';
+import { MyprofileComponent } from 'src/myprofile/myprofile.component';
+import { AnketasManagerComponent } from './Areas/admin-area/Components/anketas-manager/anketas-manager.component';
 
 const routes: Routes = [
  {path:'' ,component: HomeComponent, pathMatch:'full'},
@@ -22,8 +24,11 @@ const routes: Routes = [
  {path:'login',component: LoginComponent, pathMatch:'full',canActivate:[NotLoginGuard]},
  {path:'register',component: RegisterComponent, pathMatch:'full',canActivate:[NotLoginGuard]},
  {path:'anketas',component: AnketasComponent, pathMatch:'full',canActivate:[AuthGuard]},
- {path:'pricelist',component: PricelistComponent, pathMatch:'full',canActivate:[NotLoginGuard]},
- {path:'contacts', component: ContactsComponent, pathMatch: 'full', canActivate: [NotLoginGuard]},
+ {path:'pricelist',component: PricelistComponent, pathMatch:'full'},
+ {path:'contacts', component: ContactsComponent, pathMatch: 'full'},
+ {path:'profile', component: MyprofileComponent, pathMatch: 'full',canActivate:[AuthGuard]},
+ {path:'anketas-list', component:  AnketasManagerComponent, pathMatch: 'full',canActivate:[AdminGuard]},
+
 
 
  {path:'admin-panel',

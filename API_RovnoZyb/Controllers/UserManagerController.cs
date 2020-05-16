@@ -37,18 +37,42 @@ namespace API_RovnoZyb.Controllers
                 var moreInfo = _context.userMoreInfos.FirstOrDefault(t => t.id == item.Id);
                 temp.Email = item.Email;
                 temp.Id = item.Id;
-                temp.Phone = item.PhoneNumber;
                 if (moreInfo != null)
                 {
                     temp.fullName = moreInfo.FullName;
                     temp.Age = moreInfo.Age;
                     temp.Address = moreInfo.Address;
+                temp.Phone = moreInfo.Phone;
                 }
 
 
                 data.Add(temp);
             }
             return data;
+        }
+
+
+        [HttpPost("editUser/{id}")]
+        public ResultDTO EditUser([FromRoute] string id, [FromBody]UserItemDTO model)
+        {
+            var user = _context.Users.FirstOrDefault(t => t.Id == id);
+            var userMoreInfo = _context.userMoreInfos.FirstOrDefault(t => t.id == id);
+
+            user.Email = model.Email;
+            user.Id = model.Id;
+
+            userMoreInfo.FullName = model.fullName;
+            userMoreInfo.Age = model.Age;
+            userMoreInfo.Address = model.Address;
+            user.PhoneNumber = model.Phone;
+
+            _context.SaveChanges();
+
+            return new ResultDTO
+            {
+                Status = 200,
+                Message = "OK"
+            };
         }
 
 

@@ -8,6 +8,11 @@ body {
   color: rgb(90, 90, 90);
 }
 
+h1{
+
+    font-size: 36px;
+
+}
 .cost{
     
     font-weight: bold;
@@ -20,7 +25,8 @@ body {
     border: none;
     margin-top: 20px;
     background-color: rgba(212, 212, 212, 0.288);
-    border-radius: 0px 0px 20px 20px;
+    border-radius: 20px 20px 20px 20px;
+
 
 }
 .theadHead{
@@ -35,14 +41,25 @@ tr th{
     padding: 16px;
     border-radius: 20px 20px 0px 0px;
     border-collapse: collapse;
+    /* max-width: 750px; */
 }
+
+
+th{
+    width: 75%;
+}
+
 td{
     padding: 15px 30px;
-    
+    /* max-width: 750px; */
+
     font-size: 16px;
     color: rgb(83, 83, 83);
     font-family: 'MuseoSans500', sans-serif;
     font-weight: bold;
+}
+td.cost{
+    text-align: center !important;
 }
 h1{
     font-weight: bold;

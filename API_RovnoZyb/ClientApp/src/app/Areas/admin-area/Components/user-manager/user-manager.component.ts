@@ -4,6 +4,8 @@ import { UserManagerService } from './../../Services/user-manager.service';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { ApiResult } from '../../../../Models/result.model';
 import { NotifierService } from 'angular-notifier';
+import { AnketasModel } from 'src/app/anketas/anketas/Models/anketas.model';
+import { ApiService } from 'src/app/core/api.service';
 
 
 @Component({
@@ -16,12 +18,16 @@ export class UserManagerComponent implements OnInit {
 
   listOfData: UserItem[] = [];
   SearchResult: UserItem[] = [];
+  Anketas: AnketasModel[] = [];
+
   searchText: string;
 
   constructor(
     private userService: UserManagerService,
     private spinner: NgxSpinnerService,
-    private notifier: NotifierService
+    private notifier: NotifierService,
+    private apiService: ApiService,
+
   ) {}
 
   deleteUser(id: string)
@@ -57,11 +63,18 @@ export class UserManagerComponent implements OnInit {
     this.userService.getAllUsers().subscribe((AllUsers: UserItem[]) => {
           this.listOfData = AllUsers;
           this.SearchResult = AllUsers;
+          
           this.spinner.hide();
-      }
-    );
+      });
 
-  }
+    //   this.apiService.getAllAnketas().subscribe((AllAnketas: AnketasModel[]) => {
+    //    this.Anketas=AllAnketas;
+        
+    //     this.spinner.hide();
+    // });
+    
+    }
+    
 
 
   Search() {

@@ -1,8 +1,7 @@
-
 <h2>User Manager</h2>
 
-<input type="text" name="search" [(ngModel)]="searchText" (ngModelChange)="Search()" nz-input placeholder="Type what you want to search" class="input-search"/>
-
+<input type="text" name="search" [(ngModel)]="searchText" (ngModelChange)="Search()" nz-input placeholder="Поиск" class="input-search"/>
+<a nz-button nzType="warn" class="buttonAnket" style="margin-left: 20px;" [routerLink]="['/anketas-list']" routerLinkActive="router-link-active" >Записи людей</a>
 <nz-table #rowSelectionTable nzShowSizeChanger [nzData]="SearchResult">
   <thead>
     <tr>
@@ -24,12 +23,52 @@
       <td>{{ data.email }}</td>
       <td>{{ data.address }}</td>
       <td>
-          <a nz-button nzType="primary" style="color:white" 
+          <a nz-button nzType="primary" 
           nz-popconfirm 
           nzPopconfirmTitle="Please, confirm delete"
-          (nzOnConfirm)="deleteUser(data.id)">Delete</a>
-          <a nz-button nzType="warn" style="margin-left: 20px;">Edit</a>
+          (nzOnConfirm)="deleteUser(data.id)" class="buttonMenu">Delete</a>
+          <a nz-button nzType="warn" style="margin-left: 20px;" class="buttonMenu">Edit</a>
       </td>
     </tr>
   </tbody>
 </nz-table>
+
+<!-- <nz-table #rowSelectionTable nzShowSizeChanger [nzData]="Anketas">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>FullName</th>
+      <th>Title</th>
+      <th>Text</th>
+      <th>Phone</th>
+      <th>Servant</th>
+      <th>isClose</th>
+      
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of rowSelectionTable.data">
+      <td>{{ data.Id }}</td>
+      <td>{{ data.FullName }}</td>
+      <td>{{ data.Title }}</td>
+      <td>{{ data.Text }}</td>
+      <td>{{ data.Phone }}</td>
+      <td>{{ data.Servant }}</td>
+      <td>{{ data.isClose }}</td>
+
+      <td>
+          <a nz-button nzType="primary" style="color:white" 
+          nz-popconfirm 
+          nzPopconfirmTitle="Please, confirm delete"
+          (nzOnConfirm)="deleteAnketas(data.id)">Удалить</a>
+
+          <a nz-button nzType="primary" style="color:white" 
+          nz-popconfirm 
+          nzPopconfirmTitle="Please, confirm Close"
+          (nzOnConfirm)="closeAnketas(data.id)">Закрыть</a>
+          
+      </td>
+    </tr>
+  </tbody>
+</nz-table> -->

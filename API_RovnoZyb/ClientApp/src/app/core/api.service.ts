@@ -14,6 +14,7 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
   baseUrl = '/api/Account';
+  baseUrl2 = '/api/Anketa';
   loginStatus = new EventEmitter<boolean>();
 
   
@@ -61,6 +62,10 @@ export class ApiService {
       this.loginStatus.emit(false);
   }
 
+
+  getAllAnketas () {
+    return this.http.get(this.baseUrl2);
+}
 
 
 

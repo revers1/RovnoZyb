@@ -20,6 +20,9 @@ code {
 }
 body{
 background: url("../../wwwroot/1366252.jpg");
+/* background-attachment: fixed;
+background-size: 100%;
+background-repeat: no-repeat; */
 }
 
 

@@ -20,6 +20,7 @@ import { DashboardsComponent } from './Areas/admin-area/Components/dashboard/das
 import { UserManagerComponent } from './Areas/admin-area/Components/user-manager/user-manager.component';
 import { AnketasComponent } from './anketas/anketas/anketas.component';
 import { PricelistComponent } from './pricelist/pricelist.component';
+import { MyprofileComponent } from './../myprofile/myprofile.component';
 import { DemoNgZorroAntdModule } from './ng-zorro-antd.module';
 import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
@@ -27,6 +28,7 @@ registerLocaleData(en);
 
 import { NZ_I18N, en_US } from 'ng-zorro-antd/i18n';
 import { ContactsComponent } from './contacts/contacts/contacts.component';
+import { AnketasManagerComponent } from './Areas/admin-area/Components/anketas-manager/anketas-manager.component';
 
 const notifierOptions: NotifierOptions = {
    position: {horizontal: { position: 'right' }, vertical: { position: 'top' }}
@@ -48,7 +50,9 @@ const notifierOptions: NotifierOptions = {
       AnketasComponent,
       PricelistComponent,
       PricelistComponent,
-      ContactsComponent
+      ContactsComponent,
+      MyprofileComponent,
+      AnketasManagerComponent
    ],
    imports: [
       BrowserModule.withServerTransition({appId: 'ng-cli-universal'}),
@@ -60,8 +64,46 @@ const notifierOptions: NotifierOptions = {
       NgxSpinnerModule,
 	   DemoNgZorroAntdModule 
    ],
- 
-  providers: [],
-  bootstrap: [AppComponent]
-})
+     providers: [],
+     bootstrap: [
+        AppComponent
+     ]
+  })
 export class AppModule{}
+
+
+// @NgModule({
+//    declarations: [
+//       AppComponent,
+//       NavMenuComponent,
+//       HomeComponent,
+//       LoginComponent,
+//       RegisterComponent,
+//       RegisterComponent,
+//       NotFoundComponentComponent,
+//       AdminAreaComponent,
+//       UserAreaComponent,
+//       DashboardsComponent,
+//       UserManagerComponent,
+//       AnketasComponent,
+//       PricelistComponent,
+//       PricelistComponent,
+//       ContactsComponent,
+//       MyprofileComponent
+//    ],
+//    imports: [
+//       BrowserModule.withServerTransition({appId: 'ng-cli-universal'}),
+//       HttpClientModule,
+//       FormsModule,
+//       AppRoutingModule,
+//       NotifierModule.withConfig(notifierOptions),
+//       BrowserAnimationsModule,
+//       NgxSpinnerModule,
+// 	   DemoNgZorroAntdModule 
+//    ],
+//      providers: [],
+//      bootstrap: [
+//         AppComponent
+//      ]
+//   })
+// export class AppModule{}

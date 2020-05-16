@@ -9,14 +9,12 @@ import { ApiResult } from 'src/app/Models/result.model';
 })
 export class AnketasService {
 
-  baseUrl = '/api/anketas';
+  baseUrl = '/api/Anketa';
 
 
 
 
-constructor(private http: HttpClient
-  
-  ) { 
+constructor(private http: HttpClient) {
 
 }
 
@@ -52,5 +50,6 @@ addAnketas(AnketaModel: AnketasModel){
 editAnketas(id: string, AnketaModel: AnketasModel){
   return this.http.post<ApiResult>('/api/anketa/editanketas/' + id, AnketaModel);
 }
+
 
 }
