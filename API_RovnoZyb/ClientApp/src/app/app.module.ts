@@ -26,10 +26,10 @@ import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
 registerLocaleData(en);
 
-import { NZ_I18N, en_US } from 'ng-zorro-antd/i18n';
 import { ContactsComponent } from './contacts/contacts/contacts.component';
 import { AnketasManagerComponent } from './Areas/admin-area/Components/anketas-manager/anketas-manager.component';
 import { OurspecialistComponent } from './ourspecialist/ourspecialist.component';
+import { NZ_I18N, en_US } from 'ng-zorro-antd/i18n';
 
 const notifierOptions: NotifierOptions = {
    position: {horizontal: { position: 'right' }, vertical: { position: 'top' }}
@@ -66,7 +66,7 @@ const notifierOptions: NotifierOptions = {
             NgxSpinnerModule,
       	   DemoNgZorroAntdModule 
          ],
-           providers: [],
+           providers: [  ],
            bootstrap: [
               AppComponent
            ]
