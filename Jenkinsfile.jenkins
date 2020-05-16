@@ -17,7 +17,7 @@ pipeline  {
                 echo 'Creating docker image ...'
                 dir('.'){
           echo "============== build image =================="
-                  sh "docker build -t veremeychukden/rovnozyb . "
+                  sh "docker build -t andriy23/ida . "
                 }
             }
         }
@@ -42,27 +42,27 @@ pipeline  {
 //                '''
 //            }
 //        }
-        stage("docker stop") {
-           steps {
-                echo " ============== stoping all images =================="
-                sh '''
-                docker stop ida
-                '''
-            }
-       } 
-        stage("docker remove") {
-           steps {
-               echo " ============== removing all docker containers =================="
-               sh '''
-                docker rm ida
-                '''
-            }
-        }
+    //    stage("docker stop") {
+    //       steps {
+    //            echo " ============== stoping all images =================="
+    //            sh '''
+    //            docker stop ida
+    //            '''
+    //        }
+    //   } 
+    //    stage("docker remove") {
+    //       steps {
+    //            echo " ============== removing all docker containers =================="
+    //            sh '''
+    //            docker rm ida
+    //            '''
+    //        }
+    //    }
        stage("docker run") {
            steps {
                echo " ============== starting chatterbox =================="
                sh '''
-              docker run -d --restart=always --name ida -p 100:80 veremeychukden/ida
+              docker run -d --restart=always --name ida -p 100:80 andriy23/ida
                '''
            }
       }
