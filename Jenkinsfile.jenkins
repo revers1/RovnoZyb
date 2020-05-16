@@ -17,7 +17,7 @@ pipeline  {
                 echo 'Creating docker image ...'
                 dir('.'){
           echo "============== build image =================="
-                  sh "docker build -t andriy23/ida . "
+                  sh "docker build -t veremeychukden/rovnozyb . "
                 }
             }
         }
@@ -62,7 +62,7 @@ pipeline  {
            steps {
                echo " ============== starting chatterbox =================="
                sh '''
-              docker run -d --restart=always --name ida -p 100:80 veremeychukden/API_RovnoZyb
+              docker run -d --restart=always --name ida -p 100:80 veremeychukden/rovnozyb
                '''
            }
       }
