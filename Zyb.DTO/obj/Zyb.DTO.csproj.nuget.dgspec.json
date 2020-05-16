@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\romap\\Desktop\\Kyrsova\\RovnoZyb\\Zyb.DTO\\Zyb.DTO.csproj": {}
+    "C:\\Users\\ПК\\Source\\Repos\\RovnoZybFinish\\Zyb.DTO\\Zyb.DTO.csproj": {}
   },
   "projects": {
-    "C:\\Users\\romap\\Desktop\\Kyrsova\\RovnoZyb\\RovnoZyb\\RovnoZyb.csproj": {
+    "C:\\Users\\ПК\\Source\\Repos\\RovnoZybFinish\\RovnoZyb\\RovnoZyb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\romap\\Desktop\\Kyrsova\\RovnoZyb\\RovnoZyb\\RovnoZyb.csproj",
+        "projectUniqueName": "C:\\Users\\ПК\\Source\\Repos\\RovnoZybFinish\\RovnoZyb\\RovnoZyb.csproj",
         "projectName": "RovnoZyb",
-        "projectPath": "C:\\Users\\romap\\Desktop\\Kyrsova\\RovnoZyb\\RovnoZyb\\RovnoZyb.csproj",
-        "packagesPath": "C:\\Users\\romap\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\romap\\Desktop\\Kyrsova\\RovnoZyb\\RovnoZyb\\obj\\",
+        "projectPath": "C:\\Users\\ПК\\Source\\Repos\\RovnoZybFinish\\RovnoZyb\\RovnoZyb.csproj",
+        "packagesPath": "C:\\Users\\ПК\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ПК\\Source\\Repos\\RovnoZybFinish\\RovnoZyb\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\romap\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ПК\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -78,17 +81,20 @@
         }
       }
     },
-    "C:\\Users\\romap\\Desktop\\Kyrsova\\RovnoZyb\\Zyb.DTO\\Zyb.DTO.csproj": {
+    "C:\\Users\\ПК\\Source\\Repos\\RovnoZybFinish\\Zyb.DTO\\Zyb.DTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\romap\\Desktop\\Kyrsova\\RovnoZyb\\Zyb.DTO\\Zyb.DTO.csproj",
+        "projectUniqueName": "C:\\Users\\ПК\\Source\\Repos\\RovnoZybFinish\\Zyb.DTO\\Zyb.DTO.csproj",
         "projectName": "Zyb.DTO",
-        "projectPath": "C:\\Users\\romap\\Desktop\\Kyrsova\\RovnoZyb\\Zyb.DTO\\Zyb.DTO.csproj",
-        "packagesPath": "C:\\Users\\romap\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\romap\\Desktop\\Kyrsova\\RovnoZyb\\Zyb.DTO\\obj\\",
+        "projectPath": "C:\\Users\\ПК\\Source\\Repos\\RovnoZybFinish\\Zyb.DTO\\Zyb.DTO.csproj",
+        "packagesPath": "C:\\Users\\ПК\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ПК\\Source\\Repos\\RovnoZybFinish\\Zyb.DTO\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\romap\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ПК\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -101,8 +107,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\romap\\Desktop\\Kyrsova\\RovnoZyb\\RovnoZyb\\RovnoZyb.csproj": {
-                "projectPath": "C:\\Users\\romap\\Desktop\\Kyrsova\\RovnoZyb\\RovnoZyb\\RovnoZyb.csproj"
+              "C:\\Users\\ПК\\Source\\Repos\\RovnoZybFinish\\RovnoZyb\\RovnoZyb.csproj": {
+                "projectPath": "C:\\Users\\ПК\\Source\\Repos\\RovnoZybFinish\\RovnoZyb\\RovnoZyb.csproj"
               }
             }
           }

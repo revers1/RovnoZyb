@@ -58,3 +58,15 @@ C:\Users\romap\Desktop\Kyrsova\RovnoZyb\RovnoZyb\obj\Debug\netcoreapp3.1\RovnoZy
 C:\Users\romap\Desktop\Kyrsova\RovnoZyb\RovnoZyb\obj\Debug\netcoreapp3.1\RovnoZyb.dll
 C:\Users\romap\Desktop\Kyrsova\RovnoZyb\RovnoZyb\obj\Debug\netcoreapp3.1\RovnoZyb.pdb
 C:\Users\romap\Desktop\Kyrsova\RovnoZyb\RovnoZyb\obj\Debug\netcoreapp3.1\RovnoZyb.genruntimeconfig.cache
+C:\Users\ПК\Source\Repos\RovnoZybFinish\RovnoZyb\bin\Debug\netcoreapp3.1\RovnoZyb.deps.json
+C:\Users\ПК\Source\Repos\RovnoZybFinish\RovnoZyb\bin\Debug\netcoreapp3.1\RovnoZyb.runtimeconfig.json
+C:\Users\ПК\Source\Repos\RovnoZybFinish\RovnoZyb\bin\Debug\netcoreapp3.1\RovnoZyb.runtimeconfig.dev.json
+C:\Users\ПК\Source\Repos\RovnoZybFinish\RovnoZyb\bin\Debug\netcoreapp3.1\RovnoZyb.dll
+C:\Users\ПК\Source\Repos\RovnoZybFinish\RovnoZyb\bin\Debug\netcoreapp3.1\RovnoZyb.pdb
+C:\Users\ПК\Source\Repos\RovnoZybFinish\RovnoZyb\obj\Debug\netcoreapp3.1\RovnoZyb.csprojAssemblyReference.cache
+C:\Users\ПК\Source\Repos\RovnoZybFinish\RovnoZyb\obj\Debug\netcoreapp3.1\RovnoZyb.csproj.CoreCompileInputs.cache
+C:\Users\ПК\Source\Repos\RovnoZybFinish\RovnoZyb\obj\Debug\netcoreapp3.1\RovnoZyb.AssemblyInfoInputs.cache
+C:\Users\ПК\Source\Repos\RovnoZybFinish\RovnoZyb\obj\Debug\netcoreapp3.1\RovnoZyb.AssemblyInfo.cs
+C:\Users\ПК\Source\Repos\RovnoZybFinish\RovnoZyb\obj\Debug\netcoreapp3.1\RovnoZyb.dll
+C:\Users\ПК\Source\Repos\RovnoZybFinish\RovnoZyb\obj\Debug\netcoreapp3.1\RovnoZyb.pdb
+C:\Users\ПК\Source\Repos\RovnoZybFinish\RovnoZyb\obj\Debug\netcoreapp3.1\RovnoZyb.genruntimeconfig.cache

@@ -58,3 +58,15 @@ C:\Users\romap\Desktop\Kyrsova\RovnoZyb\Zyb.DTO\obj\Debug\netcoreapp3.1\Zyb.DTO.
 C:\Users\romap\Desktop\Kyrsova\RovnoZyb\Zyb.DTO\obj\Debug\netcoreapp3.1\Zyb.DTO.csproj.CopyComplete
 C:\Users\romap\Desktop\Kyrsova\RovnoZyb\Zyb.DTO\obj\Debug\netcoreapp3.1\Zyb.DTO.dll
 C:\Users\romap\Desktop\Kyrsova\RovnoZyb\Zyb.DTO\obj\Debug\netcoreapp3.1\Zyb.DTO.pdb
+C:\Users\ПК\Source\Repos\RovnoZybFinish\Zyb.DTO\bin\Debug\netcoreapp3.1\Zyb.DTO.deps.json
+C:\Users\ПК\Source\Repos\RovnoZybFinish\Zyb.DTO\bin\Debug\netcoreapp3.1\Zyb.DTO.dll
+C:\Users\ПК\Source\Repos\RovnoZybFinish\Zyb.DTO\bin\Debug\netcoreapp3.1\Zyb.DTO.pdb
+C:\Users\ПК\Source\Repos\RovnoZybFinish\Zyb.DTO\bin\Debug\netcoreapp3.1\RovnoZyb.dll
+C:\Users\ПК\Source\Repos\RovnoZybFinish\Zyb.DTO\bin\Debug\netcoreapp3.1\RovnoZyb.pdb
+C:\Users\ПК\Source\Repos\RovnoZybFinish\Zyb.DTO\obj\Debug\netcoreapp3.1\Zyb.DTO.csprojAssemblyReference.cache
+C:\Users\ПК\Source\Repos\RovnoZybFinish\Zyb.DTO\obj\Debug\netcoreapp3.1\Zyb.DTO.csproj.CoreCompileInputs.cache
+C:\Users\ПК\Source\Repos\RovnoZybFinish\Zyb.DTO\obj\Debug\netcoreapp3.1\Zyb.DTO.AssemblyInfoInputs.cache
+C:\Users\ПК\Source\Repos\RovnoZybFinish\Zyb.DTO\obj\Debug\netcoreapp3.1\Zyb.DTO.AssemblyInfo.cs
+C:\Users\ПК\Source\Repos\RovnoZybFinish\Zyb.DTO\obj\Debug\netcoreapp3.1\Zyb.DTO.csproj.CopyComplete
+C:\Users\ПК\Source\Repos\RovnoZybFinish\Zyb.DTO\obj\Debug\netcoreapp3.1\Zyb.DTO.dll
+C:\Users\ПК\Source\Repos\RovnoZybFinish\Zyb.DTO\obj\Debug\netcoreapp3.1\Zyb.DTO.pdb
