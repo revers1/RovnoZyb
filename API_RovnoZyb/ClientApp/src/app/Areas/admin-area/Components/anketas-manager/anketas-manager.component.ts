@@ -28,7 +28,7 @@ export class AnketasManagerComponent implements OnInit {
     this.anketaService.closeAnketas(id).subscribe( (data: ApiResult) => {
       if(data.status === 200)
       {
-        this.notifier.notify('success', 'Анкета удалена');
+        this.notifier.notify('success', 'Анкета Закрыта');
        
 
       }
@@ -44,7 +44,7 @@ export class AnketasManagerComponent implements OnInit {
 
   }
 
-  
+
   removeAnketas(id: string)
   {
     
