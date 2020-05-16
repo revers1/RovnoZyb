@@ -27,6 +27,11 @@ removeAnketas(id: string)
 {
     return this.http.post(this.baseUrl + '/RemoveAnketas/' + id, id);
 }
+closeAnketas(id: string)
+{
+    return this.http.post(this.baseUrl + '/CloseAnketas/' + id, id);
+}
+
 // addAnketas(id: string)
 // {
 //     return this.http.post(this.baseUrl + '/addAnketas/' + id, id);
@@ -50,6 +55,7 @@ addAnketas(AnketaModel: AnketasModel){
 editAnketas(id: string, AnketaModel: AnketasModel){
   return this.http.post<ApiResult>('/api/anketa/editanketas/' + id, AnketaModel);
 }
+
 
 
 }

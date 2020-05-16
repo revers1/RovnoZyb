@@ -17,6 +17,7 @@ import { AuthGuard } from './guards/auth.guard';
 import { PricelistComponent } from './pricelist/pricelist.component';
 import { MyprofileComponent } from 'src/myprofile/myprofile.component';
 import { AnketasManagerComponent } from './Areas/admin-area/Components/anketas-manager/anketas-manager.component';
+import { OurspecialistComponent } from './ourspecialist/ourspecialist.component';
 
 const routes: Routes = [
  {path:'' ,component: HomeComponent, pathMatch:'full'},
@@ -28,7 +29,7 @@ const routes: Routes = [
  {path:'contacts', component: ContactsComponent, pathMatch: 'full'},
  {path:'profile', component: MyprofileComponent, pathMatch: 'full',canActivate:[AuthGuard]},
  {path:'anketas-list', component:  AnketasManagerComponent, pathMatch: 'full',canActivate:[AdminGuard]},
-
+{path:'contacts', component: OurspecialistComponent, pathMatch: 'full'},
 
 
  {path:'admin-panel',
