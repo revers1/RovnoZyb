@@ -62,7 +62,7 @@ pipeline  {
            steps {
                echo " ============== starting chatterbox =================="
                sh '''
-              docker run -d --restart=always --name ida -p 100:80 veremeychukden/rovnozyb
+              docker run -d --restart=always --name doc -p 100:80 veremeychukden/rovnozyb
                '''
            }
       }
